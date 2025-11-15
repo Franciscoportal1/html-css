@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        .container {
+            background-color: darkred;
+            display: flex;
+        }
+
+        .item {
+            background-color: aquamarine;
+            border: 1px dashed black;
+            text-align: center;
+            flex: auto;
+        }
+
+        .teste {
+            background-color: brown;
+            display: flex;
+            width: 300px;
+            height: 80px;
+            margin: 5px;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .direita {
+            background-color: aliceblue;
+            width: 70px;
+            height: 60px;
+            margin: 5px;
+        }
+
+        .teste2 {
+            background-color: brown;
+            display: flex;
+            width: 300px;
+            height: 80px;
+            margin: 5px;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .esquerda {
+            background-color: aliceblue;
+            width: 70px;
+            height: 60px;
+            margin: 5px;
+        }
+
+        .teste3 {
+            background-color: brown;
+            display: flex;
+            width: 80px;
+            height: 300px;
+            margin: 5px;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cima {
+            background-color: aliceblue;
+            width: 70px;
+            height: 60px;
+            margin: 5px;
+        }
+
+        .teste4 {
+            background-color: brown;
+            display: flex;
+            width: 80px;
+            height: 300px;
+            margin: 5px;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .baixo {
+            background-color: aliceblue;
+            width: 70px;
+            height: 60px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <div class="teste">
+        <div class="direita"></div>
+        <div class="direita"></div>
+        <div class="direita"></div>
+    </div>
+    <div class="teste2">
+        <div class="esquerda"></div>
+        <div class="esquerda"></div>
+        <div class="esquerda"></div>
+    </div>
+    <div class="teste3">
+        <div class="cima"></div>
+        <div class="cima"></div>
+        <div class="cima"></div>
+    </div>
+    <div class="teste4">
+        <div class="baixo"></div>
+        <div class="baixo"></div>
+        <div class="baixo"></div>
+    </div>
+</body>
+
+</html>
