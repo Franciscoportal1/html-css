@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        .container {
+            background-color: darkred;
+            display: flex;
+            flex-flow: row nowrap;
+            align-content: center;
+            align-items: center;
+            height: 60px;
+            width: 450px;
+
+        }
+
+        .item1 {
+            background-color: aquamarine;
+            border: 1px dashed black;
+            height: 50px;
+            
+            flex-basis: 150px;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        .item2 {
+            background-color: aquamarine;
+            border: 1px dashed black;
+            height: 50px;
+           
+            flex-basis: 150px;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        .item3 {
+            background-color: aquamarine;
+            border: 1px dashed black;
+            height: 50px;
+            
+            flex-basis: 150px;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        .container2 {
+            background-color: darkred;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            align-items: center;
+            height: 60px;
+            width: 500px;
+        }
+
+        .item4 {
+            background-color: aquamarine;
+            border: 1px dashed black;
+            height: 50px;
+          
+            flex-basis: 150px;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        .item5 {
+            background-color: aquamarine;
+            border: 1px dashed black;
+            height: 50px;
+      
+            flex-basis: 150px;
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        .item6 {
+            background-color: aquamarine;
+            border: 1px dashed black;
+            height: 50px;
+    
+            flex-basis: 150px;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        .container3 {
+            background-color: darkred;
+            display: flex;
+            flex-flow: row nowrap;
+            align-content: center;
+            align-items: center;
+            height: 60px;
+            width: 300px;
+        }
+
+        .item7 {
+            background-color: aquamarine;
+            border: 1px dashed black;
+            height: 50px;
+          
+            flex-basis: 150px;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        .item8 {
+            background-color: aquamarine;
+            border: 1px dashed black;
+            height: 50px;
+        
+            flex-basis: 150px;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        .item9 {
+            background-color: aquamarine;
+            border: 1px dashed black;
+            height: 50px;
+           
+            flex-basis: 150px;
+            flex-shrink: 2;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+    <div class="container2">
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
+    </div>
+    <div class="container3">
+        <div class="item7"></div>
+        <div class="item8"></div>
+        <div class="item9"></div>
+    </div>
+</body>
+
+</html>
