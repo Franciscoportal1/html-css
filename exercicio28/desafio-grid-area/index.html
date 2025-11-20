@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Grid Area</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 100px 60px 1fr 60px;
+            grid-template-columns: 1fr 200px;
+            gap: 5px;
+        }
+        .topo {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgb(100, 140, 226);
+        }
+        .menu {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgb(64, 216, 196);
+        }
+        .principal {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: rgb(204, 128, 128);
+        }
+        .secundario {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            background-color: rgb(168, 230, 111);
+        }
+        .rodape {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgb(242, 150, 245);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topo">TOPO</div>
+        <div class="menu">MENU</div>
+        <div class="principal">PRINCIPAL</div>
+        <div class="secundario">SECUNDÁRIO</div>
+        <div class="rodape">RODAPÉ</div>
+    </div>
+</body>
+</html>
